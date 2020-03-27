@@ -1,12 +1,18 @@
 import React, { Fragment } from 'react';
-import Form from './Form';
-import Leads from './Leads';
+import PatchNotesTeaser from './PatchNotesTeaser';
+import NewsFeed from './NewsFeed';
 
 export default function Dashboard() {
 	return (
 		<Fragment>
-			<Form />
-			<Leads />
+			<div class="p-grid" style={{ width: '100%' }}>
+				<div class="p-md-4">
+					<NewsFeed />
+				</div>
+				<div class="p-md-8">
+					<PatchNotesTeaser />
+				</div>
+			</div>
 		</Fragment>
 	);
 }

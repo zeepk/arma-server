@@ -1,4 +1,3 @@
-// load the babel loader,
 module.exports = {
 	module: {
 		rules: [
@@ -8,6 +7,18 @@ module.exports = {
 				use: {
 					loader: 'babel-loader'
 				}
+			},
+			{
+				test: /\.css$/i,
+				use: ['style-loader', 'css-loader']
+			},
+			{
+				test: /\.(woff(2)?|ttf|eot|svg|png|jpe?g|gif)$/i,
+				use: [
+					{
+						loader: 'file-loader'
+					}
+				]
 			}
 		]
 	}

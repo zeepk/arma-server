@@ -21,6 +21,12 @@ import { Provider } from 'react-redux';
 import store from '../store';
 import { loadUser } from '../actions/auth';
 
+import 'primereact/resources/themes/luna-green/theme.css';
+import 'primereact/resources/primereact.min.css';
+import 'primeicons/primeicons.css';
+
+import 'primeflex/primeflex.css';
+
 // Alert options
 
 const alertOptions = {
@@ -41,11 +47,12 @@ class App extends Component {
 						<Fragment>
 							<Header />
 							<Alerts />
-							<div className="container">
+							<div style={{ padding: '10px 10px 0 10px', width: '100%' }}>
 								<Switch>
-									<PrivateRoute exact path="/" component={Dashboard} />
+									{/* <PrivateRoute exact path="/" component={Dashboard} />
 									<Route exact path="/register" component={Register} />
-									<Route exact path="/login" component={Login} />
+									<Route exact path="/login" component={Login} /> */}
+									<Route exact path="/" component={Dashboard} />
 								</Switch>
 							</div>
 						</Fragment>
