@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import { Card } from 'primereact/card';
-import logo from '../../images/spotlight.jpg'; // with import
+import '../styles/images.css';
 
 export class Tutorials extends Component {
 	render() {
@@ -8,7 +8,7 @@ export class Tutorials extends Component {
 			<div>
 				<Fragment>
 					<Card title="Tutorials" style={{ fontSize: '20px', height: '50%' }}>
-						<img src={logo} />
+						<img className="tut-image" src="/static/tutorials.jpg" />
 					</Card>
 				</Fragment>
 			</div>
