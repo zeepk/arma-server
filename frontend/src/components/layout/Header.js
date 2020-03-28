@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { logout } from '../../actions/auth';
+import '../styles/header.css';
 export class Header extends Component {
 	static propTypes = {
 		auth: PropTypes.object.isRequired,
@@ -42,8 +43,8 @@ export class Header extends Component {
 		// );
 
 		return (
-			<nav className="navbar navbar-expand-sm navbar-dark bg-primary pb-2">
-				<div className="container">
+			<nav className="navbar navbar-expand-lg navbar-dark bg-primary pb-2 pt-2">
+				<div className="container ml-auto">
 					<button
 						className="navbar-toggler"
 						type="button"
@@ -53,7 +54,7 @@ export class Header extends Component {
 						aria-expanded="false"
 						aria-label="Toggle navigation"
 					>
-						<span className="navbar-toggler-icon"></span>
+						<span className="navbar-toggler-icon mr-0"></span>
 					</button>
 					<div className="collapse navbar-collapse" id="navbarTogglerDemo01">
 						<ul className="navbar-nav mr-auto mt-2 mt-lg-0">
@@ -72,12 +73,11 @@ export class Header extends Component {
 									Forum
 								</Link>
 							</li>
-						</ul>
-						<a className="navbar-brand m-auto" href="#">
-							Arma Server
-						</a>
-
-						<ul className="navbar-nav mr-auto mt-2 mt-lg-0">
+							<li className="nav-item logo-link">
+								<a className="navbar-brand m-auto" href="#">
+									Arma Server
+								</a>
+							</li>
 							<li className="nav-item">
 								<Link to="/" className="nav-link pr-5 pl-5">
 									Support

@@ -1,0 +1,5 @@
+@media screen and (max-width: 620px) {
+	.logo-link {
+		order: -1;
+	}
+}

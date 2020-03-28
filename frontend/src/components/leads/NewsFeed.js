@@ -9,7 +9,7 @@ export class NewsFeed extends Component {
 				<Fragment>
 					<Card
 						title="Twitter Feed"
-						style={{ fontSize: '20px', height: '50vh' }}
+						style={{ fontSize: '20px', height: '50%' }}
 					>
 						<TwitterTimelineEmbed
 							sourceType="profile"
