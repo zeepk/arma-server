@@ -7,16 +7,13 @@ export class NewsFeed extends Component {
 		return (
 			<div>
 				<Fragment>
-					<Card
-						title="Twitter Feed"
-						style={{ fontSize: '20px', height: '50%' }}
-					>
+					<Card title="Twitter Feed" style={{ fontSize: '20px' }}>
 						<TwitterTimelineEmbed
 							sourceType="profile"
 							screenName="Arma3official"
 							options={{
 								width: '100%',
-								height: '100%'
+								height: '45vh'
 							}}
 							theme="dark"
 							noHeader={true}
