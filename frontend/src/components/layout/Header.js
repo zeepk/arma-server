@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { logout } from '../../actions/auth';
@@ -64,7 +64,7 @@ export class Header extends Component {
 								</Link>
 							</li>
 							<li className="nav-item">
-								<Link to="/" className="nav-link pr-5 pl-5">
+								<Link to="/admin/" className="nav-link pr-5 pl-5">
 									Admin
 								</Link>
 							</li>
@@ -74,7 +74,7 @@ export class Header extends Component {
 								</Link>
 							</li>
 							<li className="nav-item logo-link">
-								<a className="navbar-brand m-auto" href="#">
+								<a className="navbar-brand m-auto" href="">
 									Arma Server
 								</a>
 							</li>
@@ -105,4 +105,4 @@ const mapStateToProps = state => ({
 	auth: state.auth
 });
 
-export default connect(mapStateToProps, { logout })(Header);
+export default withRouter(connect(mapStateToProps, { logout })(Header));
