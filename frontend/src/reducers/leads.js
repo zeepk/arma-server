@@ -2,7 +2,8 @@ import {
 	GET_LEADS,
 	DELETE_LEAD,
 	ADD_LEAD,
-	LOGOUT_SUCCESS
+	LOGOUT_SUCCESS,
+	GET_PATCHNOTES
 } from '../actions/types.js';
 
 const initialState = {
@@ -16,6 +17,11 @@ export default function(state = initialState, action) {
 			return {
 				...state,
 				leads: action.payload
+			};
+		case GET_PATCHNOTES:
+			return {
+				...state,
+				patchnotes: action.payload
 			};
 		case DELETE_LEAD:
 			return {

@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { createMessage, returnErrors } from './messages';
 import { tokenConfig } from './auth';
-import { GET_LEADS, DELETE_LEAD, ADD_LEAD } from './types';
+import { GET_LEADS, DELETE_LEAD, ADD_LEAD, GET_PATCHNOTES } from './types';
 
 //had to add these lines to get DELETE_LEAD to not give a 403 error
 //courtesy of https://stackoverflow.com/a/46195212
@@ -14,6 +14,20 @@ export const getLeads = () => (dispatch, getState) => {
 		.then(res => {
 			dispatch({
 				type: GET_LEADS,
+				payload: res.data
+			});
+		})
+		.catch(err =>
+			dispatch(returnErrors(err.response.data, err.response.status))
+		);
+};
+// GET PATCH NOTES
+export const getPatchNotes = () => (dispatch, getState) => {
+	axios
+		.get('/api/patchnotes/', tokenConfig(getState))
+		.then(res => {
+			dispatch({
+				type: GET_PATCHNOTES,
 				payload: res.data
 			});
 		})

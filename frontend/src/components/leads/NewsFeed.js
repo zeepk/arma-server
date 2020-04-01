@@ -38,7 +38,10 @@ export class NewsFeed extends Component {
 						onTabChange={e => this.setState({ activeIndex: e.index })}
 						renderActiveOnly={false}
 					>
-						<TabPanel header="Announcements" contentStyle={{ height: '40vh' }}>
+						<TabPanel
+							header="Announcements"
+							contentStyle={{ height: '40vh', overflow: 'scroll' }}
+						>
 							{announcements}
 						</TabPanel>
 						<TabPanel header="Twitter Feed">

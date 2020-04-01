@@ -10,4 +10,10 @@ class Lead(models.Model):
         User, related_name="leads", on_delete=models.CASCADE, null=True)
     created_at = models.DateTimeField(auto_now_add=True)
 
+class PatchNote(models.Model):
+    name = models.CharField(max_length=100)
+    version = models.CharField(max_length=20)
+    content = models.CharField(max_length=100, blank=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+
 
