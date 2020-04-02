@@ -10,9 +10,7 @@ import {
 import { Provider as AlertProvider } from 'react-alert';
 import AlertTemplate from 'react-alert-template-basic';
 
-import Header from './layout/Header';
-import Dashboard from './leads/Dashboard';
-import Alerts from './layout/Alerts';
+import RouterComponent from './layout/RouterComponent';
 
 import { Provider } from 'react-redux';
 import store from '../store';
@@ -40,20 +38,7 @@ class App extends Component {
 		return (
 			<Provider store={store}>
 				<AlertProvider template={AlertTemplate} {...alertOptions}>
-					<Router>
-						<Fragment>
-							<Header />
-							<Alerts />
-							<div style={{ padding: '10px 10px 0 10px', width: '100%' }}>
-								<Switch>
-									{/* <PrivateRoute exact path="/" component={Dashboard} />
-									<Route exact path="/register" component={Register} />
-									<Route exact path="/login" component={Login} /> */}
-									<Route exact path="/" component={Dashboard} />
-								</Switch>
-							</div>
-						</Fragment>
-					</Router>
+					<RouterComponent />
 				</AlertProvider>
 			</Provider>
 		);

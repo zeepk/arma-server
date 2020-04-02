@@ -105,4 +105,4 @@ const mapStateToProps = state => ({
 	auth: state.auth
 });
 
-export default withRouter(connect(mapStateToProps, { logout })(Header));
+export default connect(mapStateToProps, { logout })(Header);
