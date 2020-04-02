@@ -7,7 +7,7 @@ export class Tutorials extends Component {
 		return (
 			<div className="imgContainer">
 				<div className="tag">Tutorials</div>
-				<img className="tut-image" src="/static/tutorials.jpg" />
+				<img className="tut-image" src="/static/Placeholder2.jpg" />
 			</div>
 		);
 	}

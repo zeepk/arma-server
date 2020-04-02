@@ -6,3 +6,16 @@
 .navbar {
 	box-shadow: 0px 1px 10px #000000;
 }
+.header-logo {
+	border: 1px solid red;
+	position: relative;
+	visibility: hidden;
+	max-height: 2vh;
+	width: 20vw;
+}
+.header-logo-visible {
+	border: 1px solid red;
+	position: absolute;
+	width: 20vw;
+	top: 0;
+}

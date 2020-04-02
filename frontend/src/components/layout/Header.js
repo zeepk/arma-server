@@ -74,8 +74,15 @@ export class Header extends Component {
 								</Link>
 							</li>
 							<li className="nav-item logo-link">
-								<a className="navbar-brand m-auto" href="">
-									Arma Server
+								<a className="" href="">
+									<img
+										className="header-logo-visible"
+										src="/static/AORemodelIconGold.png"
+									/>
+									<img
+										className="header-logo"
+										src="/static/AORemodelIconGold.png"
+									/>
 								</a>
 							</li>
 							<li className="nav-item">

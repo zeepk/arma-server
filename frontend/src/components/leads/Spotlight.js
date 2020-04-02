@@ -9,7 +9,7 @@ export class Spotlight extends Component {
 				<Fragment>
 					<div className="imgContainer">
 						<div className="tag">Spotlight</div>
-						<img className="spotlight-image" src="/static/tutorials.jpg" />
+						<img className="spotlight-image" src="/static/Placeholder1.jpg" />
 					</div>
 				</Fragment>
 			</div>
