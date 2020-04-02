@@ -7,9 +7,10 @@ export class Tutorials extends Component {
 		return (
 			<div>
 				<Fragment>
-					<Card title="Tutorials" style={{ fontSize: '20px', height: '50%' }}>
+					<div className="imgContainer">
+						<div className="tag">Tutorials</div>
 						<img className="tut-image" src="/static/tutorials.jpg" />
-					</Card>
+					</div>
 				</Fragment>
 			</div>
 		);

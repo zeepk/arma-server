@@ -7,9 +7,10 @@ export class Spotlight extends Component {
 		return (
 			<div>
 				<Fragment>
-					<Card title="Spotlight" style={{ fontSize: '20px', height: '50%' }}>
-						<img className="spotlight-image" src="/static/spotlight.jpg" />
-					</Card>
+					<div className="imgContainer">
+						<div className="tag">Spotlight</div>
+						<img className="spotlight-image" src="/static/tutorials.jpg" />
+					</div>
 				</Fragment>
 			</div>
 		);

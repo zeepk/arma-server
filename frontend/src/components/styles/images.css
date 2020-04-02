@@ -1,14 +1,32 @@
 .tut-image {
 	display: block;
 	margin: auto;
-	width: 100%;
-	max-width: 90vw;
-	/* max-height: 20vh; */
+	width: 40vw;
+	/* max-height: 40vh; */
+	/* height: 20vh; */
 }
 .spotlight-image {
 	display: block;
 	margin: auto;
-	width: 100%;
-	max-width: 90vw;
-	/* max-height: 20vh; */
+	width: 40vw;
+	/* max-width: 90vw; */
+	/* max-height: 40vh; */
+	/* height: 20vh; */
+}
+.imgContainer {
+	/* border: 1px solid #dddddd; */
+	width: 200px;
+	height: 200px;
+	position: relative;
+}
+.tag {
+	float: left;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index: 1000;
+	background-color: rgba(0, 0, 0, 0.384);
+	padding: 5px;
+	color: #ffffff;
+	font-weight: bold;
 }
