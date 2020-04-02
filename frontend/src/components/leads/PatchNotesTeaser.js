@@ -3,6 +3,7 @@ import { Card } from 'primereact/card';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { getPatchNotes } from '../../actions/leads';
+import renderHTML from 'react-render-html';
 
 export class PatchNotesTeaser extends Component {
 	static propTypes = {
@@ -24,7 +25,7 @@ export class PatchNotesTeaser extends Component {
 						title={note.name + ' ' + note.version}
 						style={{ width: '95%' }}
 					>
-						<p>{note.content}</p>
+						<p>{renderHTML(note.content)}</p>
 					</Card>
 				);
 			});

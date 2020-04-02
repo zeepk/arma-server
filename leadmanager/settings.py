@@ -44,7 +44,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'frontend',
     'knox',
-    'accounts'
+    'accounts',
+    'ckeditor'
 ]
 
 REST_FRAMEWORK = {
@@ -81,7 +82,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'leadmanager.wsgi.application'
-
+DJANGO_WYSIWYG_FLAVOR="ckeditor"
 
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases

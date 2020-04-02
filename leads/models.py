@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+from ckeditor.fields import RichTextField
 
 
 class Lead(models.Model):
@@ -12,8 +13,8 @@ class Lead(models.Model):
 
 class PatchNote(models.Model):
     name = models.CharField(max_length=100)
-    version = models.CharField(max_length=20)
-    content = models.CharField(max_length=100, blank=True)
+    version = models.CharField(max_length=20, blank=True)
+    content = RichTextField(blank=True, default='')
     created_at = models.DateTimeField(auto_now_add=True)
 
 
