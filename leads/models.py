@@ -17,4 +17,7 @@ class PatchNote(models.Model):
     content = RichTextField(blank=True, default='')
     created_at = models.DateTimeField(auto_now_add=True)
 
+    def __str__(self):
+        return self.name + ' ' + self.version
+
 
