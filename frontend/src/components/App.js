@@ -38,7 +38,9 @@ class App extends Component {
 		return (
 			<Provider store={store}>
 				<AlertProvider template={AlertTemplate} {...alertOptions}>
-					<RouterComponent />
+					<Router>
+						<RouterComponent />
+					</Router>
 				</AlertProvider>
 			</Provider>
 		);

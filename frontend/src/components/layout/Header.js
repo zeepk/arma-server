@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link, withRouter } from 'react-router-dom';
+import { Link, withRouter, NavLink } from 'react-router-dom';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { logout } from '../../actions/auth';
@@ -64,9 +64,9 @@ export class Header extends Component {
 								</Link>
 							</li>
 							<li className="nav-item">
-								<Link to="/admin/" className="nav-link pr-5 pl-5">
+								<a className="nav-link pr-5 pl-5 m-auto" href="/admin/">
 									Admin
-								</Link>
+								</a>
 							</li>
 							<li className="nav-item">
 								<Link to="/" className="nav-link pr-5 pl-5">
