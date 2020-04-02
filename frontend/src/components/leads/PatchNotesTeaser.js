@@ -23,7 +23,11 @@ export class PatchNotesTeaser extends Component {
 					<Card
 						key={note.id}
 						title={note.name + ' ' + note.version}
-						style={{ width: '95%' }}
+						style={{
+							width: '95%',
+							marginBottom: '10px',
+							backgroundColor: '#3e3e3e'
+						}}
 					>
 						<p>{renderHTML(note.content)}</p>
 					</Card>
