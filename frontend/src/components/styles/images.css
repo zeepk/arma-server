@@ -14,8 +14,10 @@
 	/* height: 20vh; */
 }
 .imgContainer {
+	display: block;
+	margin: auto;
 	/* border: 1px solid #dddddd; */
-	width: 200px;
+	width: 40vw;
 	height: 200px;
 	position: relative;
 }
@@ -29,4 +31,5 @@
 	padding: 5px;
 	color: #ffffff;
 	font-weight: bold;
+	font-size: 25px;
 }

@@ -3,3 +3,6 @@
 		order: -1;
 	}
 }
+.navbar {
+	box-shadow: 0px 1px 10px #000000;
+}
