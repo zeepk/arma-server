@@ -4,6 +4,7 @@
 	}
 }
 .navbar {
+	margin-top: 2vh !important;
 	box-shadow: 0px 1px 10px #000000;
 }
 .header-logo {
@@ -11,11 +12,11 @@
 	position: relative;
 	visibility: hidden;
 	max-height: 2vh;
-	width: 20vw;
+	width: 10vw;
 }
 .header-logo-visible {
-	border: 1px solid red;
+	/* border: 1px solid red; */
 	position: absolute;
-	width: 20vw;
+	width: 10vw;
 	top: 0;
 }
