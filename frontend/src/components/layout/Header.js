@@ -43,67 +43,69 @@ export class Header extends Component {
 		// );
 
 		return (
-			<nav className="navbar navbar-expand-lg navbar-dark bg-primary mt-2 pb-2 pt-2">
-				<div className="container ml-auto">
-					<button
-						className="navbar-toggler"
-						type="button"
-						data-toggle="collapse"
-						data-target="#navbarTogglerDemo01"
-						aria-controls="navbarTogglerDemo01"
-						aria-expanded="false"
-						aria-label="Toggle navigation"
-					>
-						<span className="navbar-toggler-icon mr-0"></span>
-					</button>
-					<div className="collapse navbar-collapse" id="navbarTogglerDemo01">
-						<ul className="navbar-nav mr-auto mt-2 mt-lg-0">
-							<li className="nav-item">
-								<Link to="/" className="nav-link pr-5 pl-5">
-									Home
-								</Link>
-							</li>
-							<li className="nav-item">
-								<a className="nav-link pr-5 pl-5 m-auto" href="/admin/">
-									Admin
-								</a>
-							</li>
-							<li className="nav-item">
-								<Link to="/" className="nav-link pr-5 pl-5">
-									Forum
-								</Link>
-							</li>
-							<li className="nav-item logo-link">
-								<a className="" href="">
-									<img
-										className="header-logo-visible"
-										src="/static/AORemodelIconGold.png"
-									/>
-									<img
-										className="header-logo"
-										src="/static/AORemodelIconGold.png"
-									/>
-								</a>
-							</li>
-							<li className="nav-item">
-								<Link to="/" className="nav-link pr-5 pl-5">
-									Support
-								</Link>
-							</li>
-							<li className="nav-item">
-								<Link to="/" className="nav-link pr-5 pl-5">
-									Store
-								</Link>
-							</li>
-							<li className="nav-item">
-								<Link to="/" className="nav-link pr-5 pl-5">
-									Patch Notes
-								</Link>
-							</li>
-						</ul>
+			<div className="header-container">
+				{/* <img
+					className="header-logo-visible"
+					src="/static/AORemodelIconGold.png"
+				/> */}
+				<nav className="navbar navbar-expand-lg navbar-dark bg-primary mt-2 pb-2 pt-2">
+					<div className="container ">
+						<button
+							className="navbar-toggler"
+							type="button"
+							data-toggle="collapse"
+							data-target="#navbarTogglerDemo01"
+							aria-controls="navbarTogglerDemo01"
+							aria-expanded="false"
+							aria-label="Toggle navigation"
+						>
+							<span className="navbar-toggler-icon mr-0"></span>
+						</button>
+						<div className="collapse navbar-collapse" id="navbarTogglerDemo01">
+							<ul className="navbar-nav mt-2 mt-lg-0">
+								<li className="nav-item">
+									<Link to="/" className="nav-link pr-5 pl-5">
+										Home
+									</Link>
+								</li>
+								<li className="nav-item">
+									<a className="nav-link pr-5 pl-5 m-auto" href="/admin/">
+										Admin
+									</a>
+								</li>
+								<li className="nav-item">
+									<Link to="/" className="nav-link pr-5 pl-5">
+										Forum
+									</Link>
+								</li>
+								<li className="nav-item logo-link">
+									<a className="" href="">
+										<img
+											className="header-logo-visible"
+											src="/static/AORemodelIconGold.png"
+										/>
+									</a>
+								</li>
+								<li className="nav-item">
+									<Link to="/" className="nav-link pr-5 pl-5">
+										Support
+									</Link>
+								</li>
+								<li className="nav-item">
+									<Link to="/" className="nav-link pr-5 pl-5">
+										Store
+									</Link>
+								</li>
+								<li className="nav-item">
+									<Link to="/" className="nav-link pr-5 pl-5">
+										Patch Notes
+									</Link>
+								</li>
+							</ul>
+						</div>
 					</div>
-				</div>
-			</nav>
+				</nav>
+			</div>
 		);
 	}
 }

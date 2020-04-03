@@ -4,19 +4,29 @@
 	}
 }
 .navbar {
-	margin-top: 2vh !important;
+	margin: 5vh 0 2vh 0 !important;
 	box-shadow: 0px 1px 10px #000000;
 }
+
 .header-logo {
 	border: 1px solid red;
 	position: relative;
 	visibility: hidden;
 	max-height: 2vh;
-	width: 10vw;
+	width: 150px;
 }
 .header-logo-visible {
 	/* border: 1px solid red; */
 	position: absolute;
-	width: 10vw;
-	top: 0;
+
+	margin-left: 0.3vw;
+	margin-top: -50px;
+	width: 150px;
+	z-index: 1000;
+}
+.nav-item {
+	white-space: nowrap;
+}
+.logo-link {
+	margin: 0 150px 0 150px;
 }
