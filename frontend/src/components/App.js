@@ -21,7 +21,7 @@ import 'primereact/resources/primereact.min.css';
 import 'primeicons/primeicons.css';
 
 import 'primeflex/primeflex.css';
-
+import './styles/app.css';
 // Alert options
 
 const alertOptions = {
@@ -36,13 +36,15 @@ class App extends Component {
 
 	render() {
 		return (
-			<Provider store={store}>
-				<AlertProvider template={AlertTemplate} {...alertOptions}>
-					<Router>
-						<RouterComponent />
-					</Router>
-				</AlertProvider>
-			</Provider>
+			<div className="wrapper">
+				<Provider store={store}>
+					<AlertProvider template={AlertTemplate} {...alertOptions}>
+						<Router>
+							<RouterComponent />
+						</Router>
+					</AlertProvider>
+				</Provider>
+			</div>
 		);
 	}
 }

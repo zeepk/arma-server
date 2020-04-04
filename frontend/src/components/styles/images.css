@@ -1,3 +1,22 @@
+@media screen and (max-width: 526px) {
+	.tut-image {
+		display: block;
+		margin: auto;
+		width: 90vw !important;
+		max-height: 30vh;
+		/* height: 20vh; */
+		object-fit: fill !important;
+	}
+	.spotlight-image {
+		display: block;
+		margin: auto;
+		width: 90vw !important;
+		/* max-width: 90vw; */
+		max-height: 30vh;
+		/* height: 20vh; */
+		object-fit: fill !important;
+	}
+}
 .tut-image {
 	display: block;
 	margin: auto;

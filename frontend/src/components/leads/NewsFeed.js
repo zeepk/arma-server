@@ -40,7 +40,7 @@ export class NewsFeed extends Component {
 					>
 						<TabPanel
 							header="Announcements"
-							contentStyle={{ height: '40vh', overflow: 'scroll' }}
+							contentStyle={{ height: '40vh', overflow: 'auto' }}
 						>
 							{announcements}
 						</TabPanel>
