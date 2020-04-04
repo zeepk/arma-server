@@ -2,7 +2,7 @@
 	.tut-image {
 		display: block;
 		margin: auto;
-		width: 90vw !important;
+		width: 85vw !important;
 		max-height: 30vh;
 		/* height: 20vh; */
 		object-fit: fill !important;
@@ -10,7 +10,7 @@
 	.spotlight-image {
 		display: block;
 		margin: auto;
-		width: 90vw !important;
+		width: 85vw !important;
 		/* max-width: 90vw; */
 		max-height: 30vh;
 		/* height: 20vh; */

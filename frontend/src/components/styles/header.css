@@ -5,32 +5,42 @@
 	.header-logo-visible {
 		display: none;
 	}
+	.navbar {
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+		box-shadow: 0px 1px 10px #000000;
+	}
 }
 
 .navbar {
-	margin: 5vh 8vw 2vh 8vw !important;
+	margin-top: 5vh !important;
+	margin-bottom: 2vh !important;
+	margin-left: 12vh;
+	margin-right: 12vh;
 	box-shadow: 0px 1px 10px #000000;
+	background-color: rgba(36, 36, 36, 0.4) !important;
 }
 
-.header-logo {
+/* .header-logo {
 	border: 1px solid red;
 	position: relative;
 	visibility: hidden;
 	max-height: 2vh;
 	width: 150px;
-}
+} */
 .header-logo-visible {
 	/* border: 1px solid red; */
 	position: absolute;
 
-	margin-left: 0.3vw;
+	/* margin-right: 5vw; */
 	margin-top: -50px;
 	width: 150px;
 	z-index: 1000;
 }
 .nav-item {
 	white-space: nowrap;
+	border: none !important;
 }
 .logo-link {
-	margin: 0 150px 0 150px;
+	margin: 0 150px 0 0;
 }

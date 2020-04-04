@@ -14,7 +14,7 @@ export class NewsFeed extends Component {
 	render() {
 		const announcements = (
 			<div>
-				<h1>Hello and Welcome!</h1>
+				<h3>Hello and Welcome!</h3>
 				<p>
 					This is where future information for the server will be placed. Keep
 					an eye out for useful tips and upcoming notices!

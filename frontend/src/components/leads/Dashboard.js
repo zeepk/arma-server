@@ -18,10 +18,10 @@ export default function Dashboard() {
 				</div>
 			</div>
 			<div className="p-grid" style={{ width: '90%', margin: '5vh 5vw' }}>
-				<div className="p-md-6" style={{ padding: '1.5em 0 0 0' }}>
+				<div className="p-md-6">
 					<Spotlight />
 				</div>
-				<div className="p-md-6" style={{ padding: '1.5em 0 0 0' }}>
+				<div className="p-md-6">
 					<Tutorials />
 				</div>
 			</div>
