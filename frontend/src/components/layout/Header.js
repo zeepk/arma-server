@@ -7,7 +7,7 @@ import '../styles/header.css';
 export class Header extends Component {
 	static propTypes = {
 		auth: PropTypes.object.isRequired,
-		logout: PropTypes.func.isRequired
+		logout: PropTypes.func.isRequired,
 	};
 
 	render() {
@@ -65,17 +65,17 @@ export class Header extends Component {
 							<ul className="navbar-nav mt-2 mt-lg-0">
 								<li className="nav-item">
 									<a className="nav-link pr-5 pl-5 m-auto" href="">
-										Home
+										HOME
 									</a>
 								</li>
 								<li className="nav-item">
 									<a className="nav-link pr-5 pl-5 m-auto" href="/admin/">
-										Admin
+										STORE
 									</a>
 								</li>
 								<li className="nav-item">
 									<a className="nav-link pr-5 pl-5 m-auto" href="">
-										Forum
+										FORUMS
 									</a>
 								</li>
 								<li className="nav-item logo-link">
@@ -88,17 +88,17 @@ export class Header extends Component {
 								</li>
 								<li className="nav-item">
 									<a className="nav-link pr-5 pl-5 m-auto" href="">
-										Support
+										SUPPORT
 									</a>
 								</li>
 								<li className="nav-item">
 									<a className="nav-link pr-5 pl-5 m-auto" href="">
-										Store
+										UPDATES
 									</a>
 								</li>
 								<li className="nav-item">
-									<a className="nav-link pr-5 pl-5 m-auto" href="">
-										Patch Notes
+									<a className="nav-link pr-5 pl-5 m-auto" href="/admin/">
+										LOG IN
 									</a>
 								</li>
 							</ul>
@@ -110,8 +110,8 @@ export class Header extends Component {
 	}
 }
 
-const mapStateToProps = state => ({
-	auth: state.auth
+const mapStateToProps = (state) => ({
+	auth: state.auth,
 });
 
 export default connect(mapStateToProps, { logout })(Header);

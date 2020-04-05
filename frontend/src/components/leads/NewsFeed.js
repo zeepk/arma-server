@@ -7,7 +7,7 @@ export class NewsFeed extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			activeIndex: 0
+			activeIndex: 1,
 		};
 	}
 
@@ -35,7 +35,7 @@ export class NewsFeed extends Component {
 				<Fragment>
 					<TabView
 						activeIndex={this.state.activeIndex}
-						onTabChange={e => this.setState({ activeIndex: e.index })}
+						onTabChange={(e) => this.setState({ activeIndex: e.index })}
 						renderActiveOnly={false}
 					>
 						<TabPanel
@@ -50,7 +50,7 @@ export class NewsFeed extends Component {
 								screenName="Arma3official"
 								options={{
 									width: '100%',
-									height: '39.5vh'
+									height: '39.5vh',
 								}}
 								theme="dark"
 								noHeader={true}

@@ -1,5 +1,4 @@
 import React, { Component, Fragment } from 'react';
-import { Card } from 'primereact/card';
 import '../styles/images.css';
 
 export class Tutorials extends Component {

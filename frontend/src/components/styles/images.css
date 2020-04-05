@@ -42,18 +42,7 @@
 	height: 30vh;
 	position: relative;
 }
-/* .tag {
-	float: left;
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	z-index: 1000;
-	background-color: rgba(0, 0, 0, 0.384);
-	padding: 5px;
-	color: #ffffff;
-	font-weight: bold;
-	font-size: 25px;
-} */
+
 .tag {
 	position: absolute;
 	top: 50%;
@@ -65,4 +54,33 @@
 	color: #ffffff;
 	font-weight: bold;
 	font-size: 40px;
+}
+.placeholder-tag {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	/* bring your own prefixes */
+	transform: translate(-50%, -50%);
+	background-color: rgba(0, 0, 0, 0.7);
+	padding: 5px;
+	color: #ffffff;
+	font-weight: bold;
+	/* display: block; */
+	font-size: 30px;
+}
+.placeholder-image {
+	display: block;
+	margin: auto;
+	width: 25vw;
+	max-height: 30vh;
+	/* height: 20vh; */
+	object-fit: none;
+}
+.placeholder-img-container {
+	display: block;
+	margin: auto;
+	/* border: 1px solid #dddddd; */
+	width: 25vw;
+	height: 30vh;
+	position: relative;
 }

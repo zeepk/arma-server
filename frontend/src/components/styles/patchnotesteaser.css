@@ -1,7 +1,17 @@
 .p-panel-content {
 	overflow: auto;
-	height: 40vh;
+	height: 41vh;
+	background-color: rgba(36, 36, 36, 0.699) !important;
+}
+.p-panel-titlebar {
+	background-color: rgba(36, 36, 36, 0.685) !important;
 }
 .p-panel-title {
 	font-size: 17px;
+}
+.p-panel {
+	margin-top: 10px;
+}
+.p-card {
+	background-color: rgba(51, 51, 51, 0.699) !important;
 }
