@@ -29,13 +29,22 @@ export default function Dashboard() {
 				className="p-grid"
 				style={{ width: '90%', margin: '5vh 5vw 0 5vw', paddingBottom: '5vh' }}
 			>
-				<div className="p-md-4" style={{ padding: '1.5em 0 0 0' }}>
+				<div
+					className="p-col-12 p-md-6 p-lg-4"
+					style={{ padding: '1.5em 0 0 0' }}
+				>
 					<Placeholder image_title="Placeholder3" tag="Images" />
 				</div>
-				<div className="p-md-4" style={{ padding: '1.5em 0 0 0' }}>
+				<div
+					className="p-col-12 p-md-6 p-lg-4"
+					style={{ padding: '1.5em 0 0 0' }}
+				>
 					<Placeholder image_title="Placeholder4" tag="Videos" />
 				</div>
-				<div className="p-md-4" style={{ padding: '1.5em 0 0 0' }}>
+				<div
+					className="p-col-12 p-md-6 p-lg-4"
+					style={{ padding: '1.5em 0 0 0' }}
+				>
 					<Placeholder image_title="Placeholder5" tag="Press Assets" />
 				</div>
 			</div>
