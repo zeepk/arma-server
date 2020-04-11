@@ -7,10 +7,16 @@
 	border-bottom: none !important;
 }
 .p-unselectable-text a:hover {
-	background-color: rgba(36, 36, 36, 0.63) !important;
+	background-color: rgba(212, 212, 212, 0.63) !important;
 	border: 1px solid black !important;
 	border-bottom: none !important;
 	color: white !important;
+}
+.p-tabview-selected a:hover {
+	background-color: rgba(212, 212, 212, 0.63) !important;
+	border: 1px solid black !important;
+	border-bottom: none !important;
+	color: black !important;
 }
 .p-tabview-selected a {
 	color: black !important;
