@@ -7,7 +7,7 @@ export class NewsFeed extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			activeIndex: 1,
+			activeIndex: 0,
 		};
 	}
 
@@ -38,12 +38,6 @@ export class NewsFeed extends Component {
 						onTabChange={(e) => this.setState({ activeIndex: e.index })}
 						renderActiveOnly={false}
 					>
-						<TabPanel
-							header="Announcements"
-							contentStyle={{ height: '40vh', overflow: 'auto' }}
-						>
-							{announcements}
-						</TabPanel>
 						<TabPanel header="Twitter Feed">
 							<TwitterTimelineEmbed
 								sourceType="profile"
@@ -57,6 +51,12 @@ export class NewsFeed extends Component {
 								noBorders={true}
 								noFooter={true}
 							/>
+						</TabPanel>
+						<TabPanel
+							header="Announcements"
+							contentStyle={{ height: '40vh', overflow: 'auto' }}
+						>
+							{announcements}
 						</TabPanel>
 					</TabView>
 					{/* <Card title="Twitter Feed" style={{ fontSize: '20px' }}>

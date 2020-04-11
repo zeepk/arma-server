@@ -1,12 +1,12 @@
 .wrapper {
 	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-		url('/static/background.jpg') no-repeat;
+		url('/static/altis.png') no-repeat;
 	/* background-size: 100%; */
 
 	/* min-height: 500px; */
 
 	/* Create the parallax scrolling effect */
-	background-attachment: fixed;
+	/* background-attachment: fixed; */
 	background-position: top;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -16,18 +16,17 @@
 }
 body {
 	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-		url('/static/background.jpg') no-repeat !important;
+		url('/static/altis.png') no-repeat;
 	/* background-size: 100%; */
 
 	/* min-height: 500px; */
 
 	/* Create the parallax scrolling effect */
-	background-attachment: fixed;
+	/* background-attachment: fixed; */
 	background-position: top;
 	background-repeat: no-repeat;
 	background-size: cover;
 	/* background-repeat: repeat; */
 	height: 100%;
 	width: 100%;
-	/* background-color: transparent !important; */
 }

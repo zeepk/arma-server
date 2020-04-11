@@ -4,14 +4,17 @@
 .p-unselectable-text a {
 	background-color: rgba(36, 36, 36, 0.63) !important;
 	border: 1px solid black !important;
+	border-bottom: none !important;
 }
 .p-unselectable-text a:hover {
 	background-color: rgba(36, 36, 36, 0.63) !important;
 	border: 1px solid black !important;
+	border-bottom: none !important;
 	color: white !important;
 }
 .p-tabview-selected a {
-	background-color: rgb(44, 44, 44) !important;
+	color: black !important;
+	background-color: rgb(238, 238, 238) !important;
 	box-shadow: 0 0 0 0.1em rgba(0, 0, 0, 0.788) !important;
 }
 .p-tabview-nav:hover {
