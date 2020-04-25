@@ -38,13 +38,16 @@ export class NewsFeed extends Component {
 						onTabChange={(e) => this.setState({ activeIndex: e.index })}
 						renderActiveOnly={false}
 					>
-						<TabPanel header="Twitter Feed">
+						<TabPanel
+							header="Twitter Feed"
+							contentStyle={{ height: '40vh', overflow: 'auto' }}
+						>
 							<TwitterTimelineEmbed
 								sourceType="profile"
 								screenName="Arma3official"
 								options={{
 									width: '100%',
-									height: '39.5vh',
+									// height: '39.5vh',
 								}}
 								theme="dark"
 								noHeader={true}
