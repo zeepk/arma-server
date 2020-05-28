@@ -1,6 +1,6 @@
-from leads.models import Lead, PatchNote
+from leads.models import Lead, PatchNote, StoreItem
 from rest_framework import viewsets, permissions
-from .serializers import LeadSerializer, PatchNoteSerializer
+from .serializers import LeadSerializer, PatchNoteSerializer, StoreItemSerializer
 
 
 class LeadViewSet(viewsets.ModelViewSet):
@@ -17,8 +17,16 @@ class LeadViewSet(viewsets.ModelViewSet):
     def perform_create(self, serializer):
         serializer.save(owner=self.request.user)
 
+
 class PatchNoteViewSet(viewsets.ModelViewSet):
 
     serializer_class = PatchNoteSerializer
 
     queryset = PatchNote.objects.all()
+
+
+class StoreItemViewSet(viewsets.ModelViewSet):
+
+    serializer_class = StoreItemSerializer
+
+    queryset = StoreItem.objects.all()
