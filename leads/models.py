@@ -20,4 +20,14 @@ class PatchNote(models.Model):
     def __str__(self):
         return self.name + ' ' + self.version
 
+# class StoreItem(models.Model):
+#     header = models.CharField(max_length=100)
+#     subheader = models.CharField(max_length=100)
+#     price = models.CharField(max_length=20, blank=True)
+#     content = RichTextField(blank=True, default='')
+#     created_at = models.DateTimeField(auto_now_add=True)
+
+#     def __str__(self):
+#         return self.name + ' ' + self.version
+
 

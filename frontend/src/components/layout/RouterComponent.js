@@ -5,10 +5,11 @@ import {
 	Route,
 	Switch,
 	withRouter,
-	Redirect
+	Redirect,
 } from 'react-router-dom';
 import Header from './Header';
 import Dashboard from '../leads/Dashboard';
+import StoreFront from '../leads/StoreFront';
 import Alerts from './Alerts';
 
 class RouterComponent extends Component {
@@ -23,6 +24,7 @@ class RouterComponent extends Component {
 									<Route exact path="/register" component={Register} />
 								<Route exact path="/login" component={Login} /> */}
 						<Route exact path="/" component={Dashboard} />
+						<Route exact path="/store" component={StoreFront} />
 					</Switch>
 				</div>
 			</Router>

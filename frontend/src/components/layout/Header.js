@@ -64,14 +64,14 @@ export class Header extends Component {
 						<div className="collapse navbar-collapse" id="navbarTogglerDemo01">
 							<ul className="navbar-nav mt-2 mt-lg-0">
 								<li className="nav-item">
-									<a className="nav-link pr-5 pl-5 m-auto" href="">
+									<a className="nav-link pr-5 pl-5 m-auto" href="/">
 										HOME
 									</a>
 								</li>
 								<li className="nav-item">
-									<a className="nav-link pr-5 pl-5 m-auto" href="/admin/">
+									<Link to="/store" className="nav-link pr-5 pl-5 m-auto">
 										STORE
-									</a>
+									</Link>
 								</li>
 								<li className="nav-item">
 									<a className="nav-link pr-5 pl-5 m-auto" href="">
@@ -79,7 +79,7 @@ export class Header extends Component {
 									</a>
 								</li>
 								<li className="nav-item logo-link">
-									<a className="" href="">
+									<a className="" href="/">
 										<img
 											className="header-logo-visible"
 											src="/static/AORemodelIconGold.png"
