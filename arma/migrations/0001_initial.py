@@ -22,7 +22,7 @@ class Migration(migrations.Migration):
                 ('message', models.CharField(blank=True, max_length=100)),
                 ('email', models.EmailField(max_length=100, unique=True)),
                 ('created_at', models.DateTimeField(auto_now_add=True)),
-                ('owner', models.ForeignKey(null=True, on_delete=django.db.models.deletion.CASCADE, related_name='leads', to=settings.AUTH_USER_MODEL)),
+                ('owner', models.ForeignKey(null=True, on_delete=django.db.models.deletion.CASCADE, related_name='arma', to=settings.AUTH_USER_MODEL)),
             ],
         ),
     ]

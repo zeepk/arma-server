@@ -3,42 +3,42 @@ import {
 	DELETE_LEAD,
 	ADD_LEAD,
 	LOGOUT_SUCCESS,
-	GET_PATCHNOTES
+	GET_PATCHNOTES,
 } from '../actions/types.js';
 
 const initialState = {
 	someText: 'sample text from lead reducer',
-	leads: []
+	arma: [],
 };
 
-export default function(state = initialState, action) {
+export default function (state = initialState, action) {
 	switch (action.type) {
 		case GET_LEADS:
 			return {
 				...state,
-				leads: action.payload
+				arma: action.payload,
 			};
 		case GET_PATCHNOTES:
 			return {
 				...state,
-				patchnotes: action.payload
+				patchnotes: action.payload,
 			};
 		case DELETE_LEAD:
 			return {
 				...state,
 				// the id is being sent as the payload
-				leads: state.leads.filter(lead => lead.id !== action.payload)
+				arma: state.arma.filter((lead) => lead.id !== action.payload),
 			};
 		case ADD_LEAD:
 			return {
 				...state,
-				leads: [...state.leads, action.payload]
+				arma: [...state.arma, action.payload],
 			};
 		case LOGOUT_SUCCESS:
 			return {
 				...state,
 
-				leads: []
+				arma: [],
 			};
 		default:
 			return state;

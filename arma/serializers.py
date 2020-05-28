@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from leads.models import Lead, PatchNote
+from arma.models import Lead, PatchNote
 
 
 class LeadSerializer(serializers.ModelSerializer):

@@ -40,9 +40,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'whitenoise.runserver_nostatic',
-    'leads',
+    'arma',
     'rest_framework',
-    'frontend',
+    'arma_react',
     'knox',
     'accounts',
     'ckeditor'

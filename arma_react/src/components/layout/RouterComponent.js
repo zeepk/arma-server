@@ -5,10 +5,10 @@ import {
 	Route,
 	Switch,
 	withRouter,
-	Redirect
+	Redirect,
 } from 'react-router-dom';
 import Header from './Header';
-import Dashboard from '../leads/Dashboard';
+import Dashboard from '../arma/Dashboard';
 import Alerts from './Alerts';
 
 class RouterComponent extends Component {

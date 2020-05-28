@@ -8,7 +8,7 @@ class Lead(models.Model):
     message = models.CharField(max_length=100, blank=True)
     email = models.EmailField(max_length=100, unique=True)
     owner = models.ForeignKey(
-        User, related_name="leads", on_delete=models.CASCADE, null=True)
+        User, related_name="arma", on_delete=models.CASCADE, null=True)
     created_at = models.DateTimeField(auto_now_add=True)
 
 class PatchNote(models.Model):

@@ -10,14 +10,14 @@ axios.defaults.xsrfHeaderName = 'X-CSRFToken';
 // GET LEADS
 export const getLeads = () => (dispatch, getState) => {
 	axios
-		.get('/api/leads/', tokenConfig(getState))
-		.then(res => {
+		.get('/api/arma/', tokenConfig(getState))
+		.then((res) => {
 			dispatch({
 				type: GET_LEADS,
-				payload: res.data
+				payload: res.data,
 			});
 		})
-		.catch(err =>
+		.catch((err) =>
 			dispatch(returnErrors(err.response.data, err.response.status))
 		);
 };
@@ -25,44 +25,44 @@ export const getLeads = () => (dispatch, getState) => {
 export const getPatchNotes = () => (dispatch, getState) => {
 	axios
 		.get('/api/patchnotes/', tokenConfig(getState))
-		.then(res => {
+		.then((res) => {
 			dispatch({
 				type: GET_PATCHNOTES,
-				payload: res.data
+				payload: res.data,
 			});
 		})
-		.catch(err =>
+		.catch((err) =>
 			dispatch(returnErrors(err.response.data, err.response.status))
 		);
 };
 
 // DELETE LEAD
-export const deleteLead = id => (dispatch, getState) => {
+export const deleteLead = (id) => (dispatch, getState) => {
 	axios
-		.delete(`/api/leads/${id}/`, tokenConfig(getState))
-		.then(res => {
+		.delete(`/api/arma/${id}/`, tokenConfig(getState))
+		.then((res) => {
 			dispatch(createMessage({ deleteLead: 'Lead Deleted' }));
 			dispatch({
 				type: DELETE_LEAD,
-				payload: id
+				payload: id,
 			});
 		})
-		.catch(err => console.log(err));
+		.catch((err) => console.log(err));
 };
 
 // ADD LEAD
-export const addLead = lead => (dispatch, getState) => {
+export const addLead = (lead) => (dispatch, getState) => {
 	axios
-		.post('/api/leads/', lead, tokenConfig(getState))
-		.then(res => {
+		.post('/api/arma/', lead, tokenConfig(getState))
+		.then((res) => {
 			dispatch(createMessage({ addLead: 'Lead Added' }));
 
 			dispatch({
 				type: ADD_LEAD,
-				payload: res.data
+				payload: res.data,
 			});
 		})
-		.catch(err =>
+		.catch((err) =>
 			dispatch(returnErrors(err.response.data, err.response.status))
 		);
 };

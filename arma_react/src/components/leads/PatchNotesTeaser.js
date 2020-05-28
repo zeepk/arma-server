@@ -2,13 +2,14 @@ import React, { Component, Fragment } from 'react';
 import { Card } from 'primereact/card';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import { getPatchNotes } from '../../actions/leads';
+import { getPatchNotes } from '../../actions/arma';
 import renderHTML from 'react-render-html';
+import '../styles/patchnotesteaser.css';
 
 export class PatchNotesTeaser extends Component {
 	static propTypes = {
 		patchnotes: PropTypes.array,
-		getPatchNotes: PropTypes.func.isRequired
+		getPatchNotes: PropTypes.func.isRequired,
 	};
 
 	componentDidMount() {
@@ -18,7 +19,7 @@ export class PatchNotesTeaser extends Component {
 		console.log(this.props.patchnotes);
 		let patch_notes;
 		if (this.props.patchnotes) {
-			patch_notes = this.props.patchnotes.reverse().map(note => {
+			patch_notes = this.props.patchnotes.reverse().map((note) => {
 				return (
 					<Card
 						key={note.id}
@@ -26,7 +27,7 @@ export class PatchNotesTeaser extends Component {
 						style={{
 							width: '95%',
 							marginBottom: '10px',
-							backgroundColor: '#3e3e3e'
+							backgroundColor: '#3e3e3e',
 						}}
 					>
 						<p>{renderHTML(note.content)}</p>
@@ -50,8 +51,8 @@ export class PatchNotesTeaser extends Component {
 	}
 }
 
-const mapStateToProps = state => ({
-	patchnotes: state.leads.patchnotes
+const mapStateToProps = (state) => ({
+	patchnotes: state.arma.patchnotes,
 });
 
 export default connect(mapStateToProps, { getPatchNotes })(PatchNotesTeaser);

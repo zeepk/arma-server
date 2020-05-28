@@ -1,13 +1,13 @@
 import React, { Component, Fragment } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import { getLeads, deleteLead } from '../../actions/leads';
+import { getLeads, deleteLead } from '../../actions/arma';
 
 export class Leads extends Component {
 	static propTypes = {
-		leads: PropTypes.array.isRequired,
+		arma: PropTypes.array.isRequired,
 		getLeads: PropTypes.func.isRequired,
-		deleteLead: PropTypes.func.isRequired
+		deleteLead: PropTypes.func.isRequired,
 	};
 
 	componentDidMount() {
@@ -30,7 +30,7 @@ export class Leads extends Component {
 							</tr>
 						</thead>
 						<tbody>
-							{this.props.leads.map(lead => (
+							{this.props.arma.map((lead) => (
 								<tr key={lead.id}>
 									<td>{lead.id}</td>
 									<td>{lead.name}</td>
@@ -54,8 +54,8 @@ export class Leads extends Component {
 	}
 }
 
-const mapStateToProps = state => ({
-	leads: state.leads.leads
+const mapStateToProps = (state) => ({
+	arma: state.arma.arma,
 });
 
 export default connect(mapStateToProps, { getLeads, deleteLead })(Leads);
