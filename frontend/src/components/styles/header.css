@@ -13,6 +13,8 @@
 }
 
 .navbar {
+	position: relative;
+	z-index: 1;
 	margin-top: 5vh !important;
 	margin-bottom: 5vh !important;
 	margin-left: 12vh;

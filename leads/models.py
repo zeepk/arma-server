@@ -27,9 +27,12 @@ class StoreItem(models.Model):
     subheader = models.CharField(blank=True, max_length=200)
     details = RichTextField(blank=True, default='')
     link = models.CharField(blank=True, max_length=200)
-    price = models.DecimalField(blank=True, max_digits=6, decimal_places=2)
+    price = models.CharField(blank=True, max_length=50)
     image = models.ImageField(null=True, blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        ordering = ["price"]
 
     def __str__(self):
         return self.header

@@ -18,7 +18,7 @@ class RouterComponent extends Component {
 			<Router>
 				<Header />
 				<Alerts />
-				<div style={{ padding: '10px 10px 0 10px', width: '100%' }}>
+				<div style={{ width: '100%' }}>
 					<Switch>
 						{/* <PrivateRoute exact path="/" component={Dashboard} />
 									<Route exact path="/register" component={Register} />
