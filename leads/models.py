@@ -24,11 +24,12 @@ class PatchNote(models.Model):
 
 class StoreItem(models.Model):
     header = models.CharField(max_length=100)
-    subheader = models.CharField(max_length=100)
+    subheader = models.CharField(blank=True, max_length=200)
+    details = RichTextField(blank=True, default='')
+    link = models.CharField(blank=True, max_length=200)
     price = models.DecimalField(blank=True, max_digits=6, decimal_places=2)
     image = models.ImageField(null=True, blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
         return self.header
-
