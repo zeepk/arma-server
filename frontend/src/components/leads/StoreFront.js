@@ -42,7 +42,7 @@ export default class StoreFront extends Component {
 							>
 								<div
 									style={{
-										backgroundColor: '#fdffa3',
+										backgroundColor: '#d4af37',
 										padding: '5px 10px',
 										// minWidth: '60px',
 										float: 'right',

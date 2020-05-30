@@ -31,6 +31,8 @@
 	width: 150px;
 } */
 .header-logo-visible {
+	filter: none !important;
+
 	/* border: 1px solid red; */
 	position: absolute;
 

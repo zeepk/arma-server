@@ -1,6 +1,6 @@
 .wrapper {
 	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-		url('/static/altis.png') no-repeat;
+		url('/static/altis2.png') no-repeat;
 	/* background-size: 100%; */
 
 	/* min-height: 500px; */
@@ -13,10 +13,11 @@
 	/* background-repeat: repeat; */
 	height: 100%;
 	width: 100%;
+	/* filter: grayscale(100%); */
 }
 body {
 	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-		url('/static/altis.png') no-repeat;
+		url('/static/altis2.png') no-repeat;
 	/* background-size: 100%;
 
 	/* min-height: 500px; */
@@ -29,4 +30,8 @@ body {
 	/* background-repeat: repeat; */
 	height: 100%;
 	width: 100%;
+	/* filter: grayscale(100%); */
+}
+* {
+	filter: none;
 }

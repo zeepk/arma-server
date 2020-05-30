@@ -1,7 +1,24 @@
 .p-panel-content {
 	overflow: auto;
 	height: 41vh;
-	background-color: rgba(36, 36, 36, 0.699) !important;
+	/* opacity: 0.5; */
+	/* background-color: rgba(36, 36, 36, 0.699) !important; */
+	background-color: transparent !important;
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+		url('/static/blur2.png') no-repeat !important;
+}
+.p-panel-content:after {
+	content: '';
+	opacity: 0.5;
+	height: 45vh;
+	top: 15vh;
+	left: 36.5vw;
+	bottom: 0;
+	right: 0;
+	width: 60vw;
+	position: absolute;
+	z-index: -1;
+	/* background-color: rgba(36, 36, 36, 0.699) !important; */
 }
 .p-panel-titlebar {
 	background-color: rgba(36, 36, 36, 0.685) !important;
@@ -13,5 +30,8 @@
 	margin-top: 10px;
 }
 .p-card {
-	background-color: rgba(51, 51, 51, 0.699) !important;
+	background-color: transparent !important;
+	/* background-color: rgba(51, 51, 51, 0.699) !important; */
+	box-shadow: none !important;
+	-webkit-box-shadow: none !important;
 }

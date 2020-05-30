@@ -10,7 +10,7 @@ import '../styles/patchnotesteaser.css';
 export class PatchNotesTeaserNEW extends Component {
 	static propTypes = {
 		patchnotes: PropTypes.array,
-		getPatchNotes: PropTypes.func.isRequired
+		getPatchNotes: PropTypes.func.isRequired,
 	};
 
 	componentDidMount() {
@@ -20,19 +20,22 @@ export class PatchNotesTeaserNEW extends Component {
 		console.log(this.props.patchnotes);
 		let patch_notes;
 		if (this.props.patchnotes) {
-			patch_notes = this.props.patchnotes.reverse().map(note => {
+			patch_notes = this.props.patchnotes.reverse().map((note) => {
 				return (
-					<Card
-						key={note.id}
-						title={note.name + ' ' + note.version}
-						style={{
-							width: '95%',
-							marginBottom: '10px',
-							backgroundColor: '#3e3e3e'
-						}}
-					>
-						<p>{renderHTML(note.content)}</p>
-					</Card>
+					<div>
+						<Card
+							key={note.id}
+							title={note.name + ' ' + note.version}
+							style={{
+								width: '95%',
+								marginBottom: '10px',
+								backgroundColor: '#3e3e3e',
+							}}
+						>
+							<p>{renderHTML(note.content)}</p>
+						</Card>
+						<hr style={{ backgroundColor: 'rgba(77, 77, 77, 0.699)' }} />
+					</div>
 				);
 			});
 		}
@@ -49,8 +52,8 @@ export class PatchNotesTeaserNEW extends Component {
 	}
 }
 
-const mapStateToProps = state => ({
-	patchnotes: state.leads.patchnotes
+const mapStateToProps = (state) => ({
+	patchnotes: state.leads.patchnotes,
 });
 
 export default connect(mapStateToProps, { getPatchNotes })(PatchNotesTeaserNEW);
