@@ -1,6 +1,6 @@
 .p-tabview-panels {
 	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-		url('/static/blur2.png') no-repeat !important;
+		url('/static/glitch2.png') no-repeat !important;
 	background-color: rgba(36, 36, 36, 0.61) !important;
 }
 .p-unselectable-text a {
