@@ -30,9 +30,10 @@ class StoreItem(models.Model):
     price = models.CharField(blank=True, max_length=50)
     image = models.ImageField(null=True, blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
+    order = models.IntegerField(default=0, null=False)
 
     class Meta:
-        ordering = ["price"]
+        ordering = ["order"]
 
     def __str__(self):
         return self.header
