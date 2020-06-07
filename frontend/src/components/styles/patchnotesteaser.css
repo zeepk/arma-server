@@ -2,7 +2,6 @@
 	overflow: auto;
 	height: 41vh;
 	/* opacity: 0.5; */
-	/* background-color: rgba(36, 36, 36, 0.699) !important; */
 	background-color: transparent !important;
 	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
 		url('/static/glitch2.png') no-repeat !important;

@@ -33,6 +33,7 @@
 	text-decoration: none !important;
 }
 .store-card {
-	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-		url('/static/glitch2.png') no-repeat !important;
+	/* background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+		url('/static/glitch2.png') no-repeat !important; */
+	background-color: rgba(36, 36, 36, 0.699) !important;
 }
