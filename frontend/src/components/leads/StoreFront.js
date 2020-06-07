@@ -20,7 +20,7 @@ export default class StoreFront extends Component {
 						alt={item.header}
 						className="store-item-image"
 					/>
-					<Card>
+					<Card className="store-card">
 						<div
 							className="p-grid"
 							style={{
@@ -77,7 +77,7 @@ export default class StoreFront extends Component {
 			<div>
 				<div className="gray-background"></div>
 				<div className="store-container">
-					<h2 className="store-title">In Stock</h2>
+					<h2 className="store-title">IN STOCK</h2>
 
 					<div
 						className="p-grid"

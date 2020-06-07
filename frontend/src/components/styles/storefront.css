@@ -4,6 +4,7 @@
 }
 .store-title {
 	padding: 5vh 0 0 5vw;
+	font-size: 30px;
 }
 .store-item-image {
 	max-width: 100%;
@@ -30,4 +31,8 @@
 .store-item:hover {
 	filter: brightness(120%);
 	text-decoration: none !important;
+}
+.store-card {
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+		url('/static/glitch2.png') no-repeat !important;
 }
