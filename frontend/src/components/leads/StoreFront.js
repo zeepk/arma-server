@@ -11,7 +11,7 @@ export default class StoreFront extends Component {
 		const card_array = data_array.map((item) => {
 			return (
 				<a
-					className="p-col-12 p-md-6 p-lg-4 store-item"
+					className="p-col-12 p-sm-6 p-md-4 p-lg-3 store-item"
 					style={{ padding: '1.5em 0 0 0' }}
 					href={item.link}
 				>
