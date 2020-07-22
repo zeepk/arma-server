@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 from ckeditor.fields import RichTextField
+from django.template.defaultfilters import slugify
 
 
 class Lead(models.Model):
@@ -17,6 +18,8 @@ class PatchNote(models.Model):
     version = models.CharField(max_length=20, blank=True)
     content = RichTextField(blank=True, default='')
     created_at = models.DateTimeField(auto_now_add=True)
+    image = models.ImageField(null=True, blank=True)
+    slug = models.SlugField(max_length=200, default=slugify(name))
 
     def __str__(self):
         return self.name + ' ' + self.version
