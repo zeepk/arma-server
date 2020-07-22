@@ -71,6 +71,7 @@ export default class Updates extends Component {
 							width: '90%',
 							margin: '5vh 5vw 0 5vw',
 							paddingBottom: '5vh',
+							zIndex: 100,
 						}}
 					>
 						{this.state.data}

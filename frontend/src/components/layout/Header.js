@@ -1,14 +1,14 @@
-import React, { Component } from 'react';
-import { Link, withRouter, NavLink } from 'react-router-dom';
-import { connect } from 'react-redux';
-import PropTypes from 'prop-types';
-import { logout } from '../../actions/auth';
-import '../styles/header.css';
+import React, { Component } from 'react'
+import { Link, withRouter, NavLink } from 'react-router-dom'
+import { connect } from 'react-redux'
+import PropTypes from 'prop-types'
+import { logout } from '../../actions/auth'
+import '../styles/header.css'
 export class Header extends Component {
 	static propTypes = {
 		auth: PropTypes.object.isRequired,
 		logout: PropTypes.func.isRequired,
-	};
+	}
 
 	render() {
 		// const { isAuthenticated, user } = this.props.auth;
@@ -92,7 +92,7 @@ export class Header extends Component {
 									</a>
 								</li>
 								<li className="nav-item">
-									<a className="nav-link pr-5 pl-5 m-auto" href="">
+									<a className="nav-link pr-5 pl-5 m-auto" href="/updates">
 										UPDATES
 									</a>
 								</li>
@@ -106,12 +106,12 @@ export class Header extends Component {
 					</div>
 				</nav>
 			</div>
-		);
+		)
 	}
 }
 
 const mapStateToProps = (state) => ({
 	auth: state.auth,
-});
+})
 
-export default connect(mapStateToProps, { logout })(Header);
+export default connect(mapStateToProps, { logout })(Header)
