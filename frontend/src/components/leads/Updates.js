@@ -16,7 +16,7 @@ export default class Updates extends Component {
 					style={{ padding: '1.5em 0 0 0' }}
 					href="/"
 				>
-					{/* <img src={item.image} alt={item.name} className="update-item-image" /> */}
+					<img src={item.image} alt={item.name} className="update-item-image" />
 					<Card className="update-card">
 						<div
 							className="p-grid"
