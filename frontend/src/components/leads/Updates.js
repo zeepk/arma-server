@@ -71,6 +71,9 @@ export default class Updates extends Component {
 			);
 			component = (
 				<div>
+					<a style={{ color: 'white', padding: '5vh 0 0 5vw' }} href="/updates">
+						⬅ Back to Overview
+					</a>
 					<h2 className="update-title">{`${patch.name} ${patch.version}`}</h2>
 
 					<div

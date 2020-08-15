@@ -1,31 +1,35 @@
-import React, { Component, Fragment } from 'react'
-import { Card } from 'primereact/card'
-import { connect } from 'react-redux'
-import PropTypes from 'prop-types'
-import { getPatchNotes } from '../../actions/leads'
-import renderHTML from 'react-render-html'
-import { Panel } from 'primereact/panel'
-import '../styles/patchnotesteaser.css'
+import React, { Component, Fragment } from 'react';
+import { Card } from 'primereact/card';
+import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
+import { getPatchNotes } from '../../actions/leads';
+import renderHTML from 'react-render-html';
+import { Panel } from 'primereact/panel';
+import '../styles/patchnotesteaser.css';
 
-export class PatchNotesTeaserNEW extends Component {
+export class PatchNotesTeaser extends Component {
 	static propTypes = {
 		patchnotes: PropTypes.array,
 		getPatchNotes: PropTypes.func.isRequired,
-	}
+	};
 
 	componentDidMount() {
-		this.props.getPatchNotes()
+		this.props.getPatchNotes();
 	}
 	render() {
-		console.log(this.props.patchnotes)
-		let patch_notes
+		let patch_notes;
 		if (this.props.patchnotes) {
 			patch_notes = this.props.patchnotes.reverse().map((note) => {
+				const title = (
+					<a style={{ color: 'white' }} href={`/updates?patch=${note.slug}`}>
+						{note.name + ' ' + note.version}
+					</a>
+				);
 				return (
 					<div>
 						<Card
 							key={note.id}
-							title={note.name + ' ' + note.version}
+							title={title}
 							style={{
 								width: '95%',
 								marginBottom: '10px',
@@ -36,8 +40,8 @@ export class PatchNotesTeaserNEW extends Component {
 						</Card>
 						<hr style={{ backgroundColor: 'rgba(77, 77, 77, 0.699)' }} />
 					</div>
-				)
-			})
+				);
+			});
 		}
 
 		return (
@@ -48,12 +52,12 @@ export class PatchNotesTeaserNEW extends Component {
 					</Panel>
 				</Fragment>
 			</div>
-		)
+		);
 	}
 }
 
 const mapStateToProps = (state) => ({
 	patchnotes: state.leads.patchnotes,
-})
+});
 
-export default connect(mapStateToProps, { getPatchNotes })(PatchNotesTeaserNEW)
+export default connect(mapStateToProps, { getPatchNotes })(PatchNotesTeaser);
