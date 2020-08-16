@@ -10,6 +10,7 @@ export default class Updates extends Component {
 	}
 	createCards = (data_array) => {
 		const card_array = data_array.map((item) => {
+			const date = new Date(item.created_at);
 			return (
 				<a
 					className="p-col-12 p-sm-6 p-lg-4 store-item"
@@ -37,9 +38,14 @@ export default class Updates extends Component {
 								style={{
 									textAlign: 'left',
 									fontSize: '16px',
+									margin: '5px 0 0 0',
 								}}
 							>
-								{renderHTML(item.content)}
+								<p style={{ fontStyle: 'italic' }}>
+									{item.author
+										? `${item.author} - ${date.toLocaleDateString()}`
+										: date.toLocaleDateString()}
+								</p>
 							</div>
 						</div>
 					</Card>
@@ -64,8 +70,6 @@ export default class Updates extends Component {
 	render() {
 		var component = <div />;
 		if (window.location.href.includes('patch') && this.state.data.length > 0) {
-			console.log(window.location.href.split('=')[1]);
-			console.log(this.state.data);
 			const patch = this.state.data.find(
 				(note) => note.slug === window.location.href.split('=')[1]
 			);
@@ -100,23 +104,31 @@ export default class Updates extends Component {
 						<div
 							className="p-col-12"
 							style={{
-								textAlign: 'center',
+								padding: '40px 0 0 0',
 								position: 'absolute',
-								width: '100%',
+								width: '90%',
+								overflow: 'hidden',
 								height: '15vh',
 								top: '44vh',
 								background:
 									'rgba(0, 0, 0, 0) linear-gradient(to top, rgb(0, 9, 19) 20%, rgba(0, 9, 19, 0) 100%) repeat scroll 0% 0%',
 							}}
 						>
-							<p className="patch-title">{`${patch.name} ${patch.version}`}</p>
-							<p style={{ fontStyle: 'italic' }}>
-								{patch.author ? `- ${patch.author}` : ''}
-							</p>
+							<div
+								style={{
+									textAlign: 'center',
+									maxWidth: '90vw',
+								}}
+							>
+								<p className="patch-title">{`${patch.name} ${patch.version}`}</p>
+								<p style={{ fontStyle: 'italic' }}>
+									{patch.author ? `- ${patch.author}` : ''}
+								</p>
+							</div>
 						</div>
 						<div
 							className="p-col-12"
-							style={{ margin: '0 auto', textAlign: 'left' }}
+							style={{ margin: '10vh auto', textAlign: 'left' }}
 						>
 							{renderHTML(patch.content)}
 						</div>
