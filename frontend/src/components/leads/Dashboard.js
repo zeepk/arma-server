@@ -1,6 +1,5 @@
 import React, { Fragment } from 'react';
-import PatchNotesTeaserNEW from './PatchNotesTeaserNEW';
-import PatchNotesTeaser from './PatchNotesTeaserOLD';
+import PatchNotesTeaser from './PatchNotesTeaser';
 import NewsFeed from './NewsFeed';
 import Spotlight from './Spotlight';
 import Placeholder from './Placeholder';
@@ -14,7 +13,7 @@ export default function Dashboard() {
 					<NewsFeed />
 				</div>
 				<div className="p-md-8" style={{ padding: '1.5em' }}>
-					<PatchNotesTeaserNEW />
+					<PatchNotesTeaser />
 				</div>
 			</div>
 			<div className="p-grid" style={{ width: '90%', margin: '5vh 5vw' }}>

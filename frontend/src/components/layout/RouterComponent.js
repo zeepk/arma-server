@@ -10,6 +10,7 @@ import {
 import Header from './Header';
 import Dashboard from '../leads/Dashboard';
 import StoreFront from '../leads/StoreFront';
+import Updates from '../leads/Updates';
 import Alerts from './Alerts';
 
 class RouterComponent extends Component {
@@ -25,6 +26,7 @@ class RouterComponent extends Component {
 								<Route exact path="/login" component={Login} /> */}
 						<Route exact path="/" component={Dashboard} />
 						<Route exact path="/store" component={StoreFront} />
+						<Route path="/updates" component={Updates} />
 					</Switch>
 				</div>
 			</Router>
