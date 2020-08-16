@@ -22,21 +22,9 @@
 	box-shadow: 0px 1px 10px #000000;
 	background-color: rgba(36, 36, 36, 0.4) !important;
 }
-
-/* .header-logo {
-	border: 1px solid red;
-	position: relative;
-	visibility: hidden;
-	max-height: 2vh;
-	width: 150px;
-} */
 .header-logo-visible {
 	filter: none !important;
-
-	/* border: 1px solid red; */
 	position: absolute;
-
-	/* margin-right: 5vw; */
 	margin-top: -50px;
 	width: 150px;
 	z-index: 1000;
@@ -47,4 +35,8 @@
 }
 .logo-link {
 	margin: 0 150px 0 0;
+}
+.nav-link {
+	font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+		'Helvetica Neue', Arial, sans-serif;
 }
