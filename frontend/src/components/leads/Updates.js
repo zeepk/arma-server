@@ -74,7 +74,6 @@ export default class Updates extends Component {
 					<a style={{ color: 'white', padding: '5vh 0 0 5vw' }} href="/updates">
 						⬅ Back to Overview
 					</a>
-					<h2 className="update-title">{`${patch.name} ${patch.version}`}</h2>
 
 					<div
 						className="p-grid"
@@ -85,13 +84,41 @@ export default class Updates extends Component {
 							zIndex: 100,
 						}}
 					>
-						<div className="p-col-6">{renderHTML(patch.content)}</div>
-						<div className="p-col-6">
+						<div className="p-col-12" style={{ display: 'flex' }}>
 							<img
 								src={patch.image}
 								alt={patch.name}
 								className="update-patch-image"
+								style={{
+									margin: '0 auto',
+									width: '95vw',
+									height: '50vh',
+									objectFit: 'cover',
+								}}
 							/>
+						</div>
+						<div
+							className="p-col-12"
+							style={{
+								textAlign: 'center',
+								position: 'absolute',
+								width: '100%',
+								height: '15vh',
+								top: '44vh',
+								background:
+									'rgba(0, 0, 0, 0) linear-gradient(to top, rgb(0, 9, 19) 20%, rgba(0, 9, 19, 0) 100%) repeat scroll 0% 0%',
+							}}
+						>
+							<p className="patch-title">{`${patch.name} ${patch.version}`}</p>
+							<p style={{ fontStyle: 'italic' }}>
+								{patch.author ? `- ${patch.author}` : ''}
+							</p>
+						</div>
+						<div
+							className="p-col-12"
+							style={{ margin: '0 auto', textAlign: 'left' }}
+						>
+							{renderHTML(patch.content)}
 						</div>
 					</div>
 				</div>

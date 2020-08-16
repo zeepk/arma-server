@@ -37,3 +37,8 @@
 		url('/static/glitch2.png') no-repeat !important; */
 	background-color: rgba(36, 36, 36, 0.699) !important;
 }
+.patch-title {
+	font-weight: bold;
+	color: white;
+	font-size: calc(30px + 0.5vw);
+}

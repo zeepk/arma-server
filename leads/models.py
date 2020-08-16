@@ -16,6 +16,7 @@ class Lead(models.Model):
 class PatchNote(models.Model):
     name = models.CharField(max_length=100)
     version = models.CharField(max_length=20, blank=True)
+    author = models.CharField(max_length=100, default='', blank=True)
     content = RichTextField(blank=True, default='')
     created_at = models.DateTimeField(auto_now_add=True)
     image = models.ImageField(null=True, blank=True)
