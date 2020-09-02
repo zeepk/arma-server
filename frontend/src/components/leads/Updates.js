@@ -138,7 +138,45 @@ export default class Updates extends Component {
 		} else {
 			component = (
 				<div>
-					<h2 className="update-title">Updates</h2>
+					<div
+						className="update-title"
+						style={{ width: '230px', height: '100px', margin: '0 0 0 7vw' }}
+					>
+						<div className="p-grid" style={{ margin: 0, height: '20px' }}>
+							<div
+								className="p-col-6 title-border"
+								style={{
+									borderTop: '3px solid white',
+									borderLeft: '3px solid white',
+								}}
+							/>
+							<div className="p-col-6 title-border" />
+						</div>
+						<div
+							className="p-grid"
+							style={{
+								margin: 0,
+								height: '60px',
+								borderRight: '3px solid white',
+								borderLeft: '3px solid white',
+							}}
+						>
+							<div className="p-col-6 title-border">
+								<h2 style={{ margin: '0 0 0 10px' }}>Updates</h2>
+							</div>
+							<div className="p-col-6 title-border" />
+						</div>
+						<div className="p-grid" style={{ margin: 0, height: '20px' }}>
+							<div className="p-col-6 title-border" />
+							<div
+								className="p-col-6 title-border"
+								style={{
+									borderBottom: '3px solid white',
+									borderRight: '3px solid white',
+								}}
+							/>
+						</div>
+					</div>
 
 					<div
 						className="p-grid"
