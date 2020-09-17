@@ -162,7 +162,9 @@ export default class Updates extends Component {
 							}}
 						>
 							<div className="p-col-6 title-border">
-								<h2 style={{ margin: '0 0 0 10px' }}>UPDATES</h2>
+								<h2 style={{ margin: '0 0 0 25px', fontSize: '40px' }}>
+									UPDATES
+								</h2>
 							</div>
 							<div className="p-col-6 title-border" />
 						</div>
